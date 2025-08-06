@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tìm x</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div id="stats">
+    Số câu đúng: <span id="correct">0</span> / 
+    Tổng số câu: <span id="total">0</span> 
+    (Tỷ lệ: <span id="percentage">0%</span>)
+  </div>
+  <div id="question-container">
+    <h2>Tìm x:</h2>
+    <div class="math-equation" id="math-expression"></div>
+    <div id="options-container"></div>
+    <button id="startButton" onclick="startQuiz()">Bắt đầu</button>
+    <button id="checkButton" onclick="checkAnswer()" disabled>Kiểm tra</button>
+    <button id="nextButton" onclick="nextQuestion()" disabled>Câu tiếp theo</button>
+    <div id="result"></div>
+    <div id="values-display"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
