@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+#question-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme #question-container {
+  background-color: #2d2d2d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.math-equation {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.option {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+body.dark-theme button {
+  background-color: #45a049;
+  color:white;
+}
+
+body.dark-theme button:hover {
+  background-color: #4CAF50;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+body.dark-theme button:disabled {
+  background-color: #555555;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#values-display {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+body.dark-theme #values-display {
+  color: #bbb;
+}
+
+.theme-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body.dark-theme .theme-switch {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
